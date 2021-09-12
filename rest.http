@@ -1,0 +1,32 @@
+#### Admin CMS APIs
+
+###root api
+Get http://localhost:8000/
+
+### Create new user
+POST http://localhost:8000/api/v1/user
+Content-Type: application/json
+
+{
+
+"fname":"Rajit",
+"lname":"Shyaula",
+"email":"rshy@gmail.com",
+"password":"123456sdfg6",
+"dob":"2021-10-2",
+"phone": "0450097045",
+"address":"sydney",
+"gander": "male"
+
+}
+
+ 
+### verify admin email
+PATCH   http://localhost:8000/api/v1/user/email-verification
+Content-Type: application/json
+
+{
+  "pin": "731977",
+  "email": "bsssc1f@ba.com"
+}
+ 
